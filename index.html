@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Preguntas y Respuestas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="color: #ffffff;text-shadow: 0 0 20px rgba(215, 255, 255, 0.5);">Página de Preguntas y Respuestas</h1>
+        </header>
+
+        <section class="faq">
+            <div class="item">
+                <h2 class="pregunta">¿Qué es HTML y cuál es su función principal en el desarrollo web?</h2>
+                <p class="respuesta">HTML es la ayuda y el encargado para hacer la estructra de lás páginas web, la cual define los elementos que esta contendrá, como por ejemplo:Títulos, párrafos, imágenes.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Qué son las etiquetas HTML y cómo se utlizan?</h2>
+                <p class="respuesta">Las etiquetas son como palabras reservadas para definir una infinidad de elementos dentro de las páginas web,se encuentran dentro de los signos de 'mayor o menor' (<>). Ejemplos: a, img, div.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Qué es CSS y cómo se utiliza para dar estilo a una página web?</h2>
+                <p class="respuesta">CSS se encarga de darle vida o estilizar una página web, la decora en otras palabras; funciona de tal manera que manda a llamar a las etiquetas o grupo de etiquetas para darles un estilo y poder definir
+                    desde tipo de letra, hasta como se posicionará un elemento.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Cuáles son las propiedades más importantes de CSS?</h2>
+                <p class="respuesta">font-family, font-size,color,width,height,padding,margin,etc.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Cuáles son las propiedades más importantes de CSS?</h2>
+                <p class="respuesta">font-family, font-size,color,width,height,padding,margin,etc.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">Explicación modelo de caja</h2>
+                <p class="respuesta">Es un contenedor que contiene muchas propiedades, entre ellas están, bordes, márgenes, relleno y el contenido que se le asigne.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Qué es el diseño responsivo?</h2>
+                <p class="respuesta">El diseño responsivo surge de la necesidad de presentar el contenido de una página web para muchas plataformas, y que en cada una de estas se visualice correctamente.
+                    La manera en la que funciona es por dimesiones, estas dimensiones son standares, ya que son medidas las cuales la mayoría de aparatos poseen.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Qué es JavaScript y como se intrega en el desarrollo de páginas web?</h2>
+                <p class="respuesta">JS Es un lenguaje de programación para páginas web, la cual nos permite la codificación de elementos, como por ejemplo: enviar correos eletrónicos, escribir HTML por medio de botones, etc.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">Document Object Model - ¿Cómo interactúa con HTML y CSS?</h2>
+                <p class="respuesta">El DOM es una representación de la estructura de una página web, JS puede acceder a los elemntos que esta contenga y manipularlos, incluyendo el HTML (sus etiquetas), manipular CSS (Los estilos).
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Cómo puede hacer JS una página web interactiva?</h2>
+                <p class="respuesta">Esto será posible por medio de las actualizaciones en tiempo real, animaciones y elementos interactivos.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Qué es GIT y porqué es importante en el desarrollo web?</h2>
+                <p class="respuesta">Git es una herramienta que facilita el trabajo colaborativo, para la creación de proyectos en equipo.
+                    Es importante ya que fomenta el orden en el desarrollo de proyectos, y tiene muchas herramientas para manipular los proyectos, su progreso.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">Control de versiones con GIT</h2>
+                <p class="respuesta">El control de versiones se lleva cada vez que nosotros guardamos nuestro trabajo, así vamos actualizando nuestro proyecto, 
+                    y si deseamos podes deshacer algún movimiento; es decir, regresar a versiones pasadas.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="pregunta">¿Qué es GitHub y cómo facilita el desarrollo de proyectos web?</h2>
+                <p class="respuesta">GitHub está asociado con git ya que se maneja de manera por código o interfaz gráfica, en cambio esta vez el proyecto se 
+                    almacena en la nube, y podemos tener tambien un control del proyecto de manera gráfica. También podemos agregar colaboradores y hacer nuestros repositorios los
+                    cuales son proyectos, y estos nos traen infinidad de funciones.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p style="color: #00bcd4;text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);">Alessandro Imanol Ramírez Morán #20230056</p>
+        </footer>
+    </div>
+</body>
+<script>
+    //Investigación: Busque ese efecto o función para desplegar la respuesta.
+    document.querySelectorAll('.item .pregunta').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+</script>
+
+</html>
